@@ -18,6 +18,12 @@
 
 # チュートリアル概要
 
--   チュートリアル 01 <br>
+-   [チュートリアル 01](https://docs.djangoproject.com/ja/5.0/intro/tutorial01/) <br>
     WEB アプリの中の一部機能を Polls アプリケーションとして部分的に実装できる。また、それを urls.py を使いルーティングさせることで簡単に参照できる。 <br>
     `py manage.py startapp polls` Polls アプリケーションの作成
+-   [チュートリアル 02](https://docs.djangoproject.com/ja/5.0/intro/tutorial02/) <br>
+    モデルの作成とデータベース API、管理ユーザー（Django Admin）の作成 <br>
+    `python manage.py makemigrations polls` モデル（models.py）をもとにマイグレーション（0001_initial.py）を生成<br>
+    `python manage.py sqlmigrate polls 0001` マイグレーションから SQL を表示<br>
+    `python manage.py migrate` マイグレーションから SQL を実行 <br>
+    `python manage.py createsuperuser` 管理ユーザーを作成し、管理画面を自動生成
