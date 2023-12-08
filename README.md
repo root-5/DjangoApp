@@ -3,6 +3,7 @@
 1. Python, Django のインストール
 2. `django-admin startproject Django`
 3. `py manage.py runserver` 開発環境の起動 >> [確認](http://127.0.0.1:8000/)
+4. SECRET_KEY を local_settings.py に記述して gitignore 指定
 
 # ディレクトリ構成
 
@@ -14,3 +15,9 @@
 -   mysite/urls.py: Django プロジェクトの URL 宣言、いうなれば Django サイトにおける「目次」に相当します。詳しくは URL ディスパッチャ を参照 してください。
 -   mysite/asgi.py: プロジェクトを提供する ASGI 互換 Web サーバーのエントリポイント。詳細については ASGI でデプロイする を参照してください。
 -   mysite/wsgi.py: プロジェクトをサーブするための WSGI 互換 Web サーバーとのエントリーポイントです。詳細は WSGI とともにデプロイするには を参照してください。
+
+# チュートリアル概要
+
+-   チュートリアル 01 <br>
+    WEB アプリの中の一部機能を Polls アプリケーションとして部分的に実装できる。また、それを urls.py を使いルーティングさせることで簡単に参照できる。 <br>
+    `py manage.py startapp polls` Polls アプリケーションの作成
